@@ -5,17 +5,6 @@ const StudentForm = ({addStudent}) => {
         name: "",
         roll: "",
     })
-    // const [studentName, setStudentName] = useState("")
-    // const [studentRoll, setStudentRoll] = useState()
-
-    // const handleNameChange = (e) => {
-    //     setStudentName(e.currentTarget.value)
-    //     // setStudentInfo({name: studentName})
-    // }
-    // const handleRollChange = (e) => {
-    //     setStudentRoll(e.currentTarget.value)
-    //     // setStudentInfo({roll: studentRoll})
-    // }
 
     const handleChange = (e) => {
         const {name, value} = e.target;
@@ -25,13 +14,12 @@ const StudentForm = ({addStudent}) => {
         })
     }
 
-    console.log(studentInfo);
-
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(studentInfo);
         
-        // addStudent(studentName);
-        // setStudentName("");
+        addStudent(studentInfo);
+        setStudentInfo({name: "", roll:"",})
 
     }
 
@@ -40,14 +28,21 @@ const StudentForm = ({addStudent}) => {
         <form action="" onSubmit={handleSubmit}>
             <input 
                 name='name' 
-                // value={studentName} 
+                value={studentInfo.name} 
                 onChange={handleChange} 
                 type="text"
+                placeholder='name'
             />
-            <input name='roll' 
-            // value={studentRoll} 
-            onChange={handleChange} type="text"/>
+            <input 
+                name='roll' 
+                value={studentInfo.roll} 
+                onChange={handleChange} 
+                type="text"
+                placeholder='roll'
+            />
+
             <button>Submit</button>
+            
         </form>
     </div>
   )

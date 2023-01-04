@@ -8,8 +8,26 @@ const Student = ({student, handleCheckIn}) => {
     }
 
   return (
-    <div id={student.id} className={student.status ? "strike" : ""} onClick={handleClick}>
-        {student.task}
+    <div>
+        <div 
+            id={student.id} 
+            // className={student.status ? "strike" : ""} 
+            onClick={handleClick}
+        >
+            {student.name}
+            {student.roll}
+            {student.status? "true" : "false"}
+
+            
+        </div>
+
+        {/* <div id={student.id}>
+            {student.status == "true" && 
+                <>
+                    {console.log(student.name)}
+                </>
+                }
+        </div> */}
     </div>
   )
 }

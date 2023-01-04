@@ -15,11 +15,12 @@ function App() {
     setStudentList(mapped);
   }
 
-  const addStudent = (studentName) => {
-    let copy = [...studentList]
+  const addStudent = (studentInfo) => {
+    console.log(studentInfo.name);
+    // let copy = [...studentList]
 
-    copy = [...copy, {id: studentList.length + 1, task: studentName, status:false}]
-    setStudentList(copy);
+    // copy = [...copy, {id: studentList.length + 1, task: studentName, status:false}]
+    // setStudentList(copy);
   }
 
   return (
