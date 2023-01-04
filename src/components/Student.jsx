@@ -2,7 +2,7 @@ import React from 'react'
 
 const Student = ({student}) => {
   return (
-    <div>
+    <div className={student.complete ? "strike" : ""}>
         {student.task}
     </div>
   )
