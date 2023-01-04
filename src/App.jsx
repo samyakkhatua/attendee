@@ -1,4 +1,5 @@
 import { useState } from 'react'
+// import data from './data.json';
 import './App.css'
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      
+      <h1 className="">Attendee</h1>
     </div>
   )
 }
