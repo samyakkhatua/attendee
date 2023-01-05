@@ -1,14 +1,14 @@
 import React from "react";
 
 const Student = ({ student, handleCheckIn, handleCheckOut }) => {
-  const handleInClick = (e) => {
+  
+    const handleInClick = (e) => {
     e.preventDefault(e.currentTarget.id);
     handleCheckIn(e.currentTarget.id);
   };
 
   const handleOutClick = (e) => {
     e.preventDefault(e.currentTarget.id);
-    console.log(e.currentTarget.id);
     handleCheckOut(e.currentTarget.id);
   };
 

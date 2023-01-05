@@ -13,8 +13,6 @@ function App() {
 
   const handleCheckIn = (id) => {
     let mapped = studentList.map((student) => {
-      // return student.id == id ? {...student, status: !student.status } : { ...student};
-
       if (student.id == id) {
         return { ...student, status: !student.status, checkin: currTime };
       } else {
@@ -26,9 +24,6 @@ function App() {
 
   const handleCheckOut = (id) => {
     let mapped = studentList.map((student) => {
-      // return student.id == id
-      //   ? { ...student, status: !student.status }
-      //   : { ...student };
       if (student.id == id) {
         return { ...student, status: !student.status, checkout: currTime };
       } else {
@@ -46,16 +41,32 @@ function App() {
     setStudentList(copy);
   };
 
+  let totalStudents = studentList.length;
+
+  // const count = (totalStudents) => {
+  //   while (totalStudents!=0) {
+  //     let temp = 0
+  //     if (student.status==true) {
+  //       temp+=1
+  //     }
+  //     totalStudents-=1
+  //   }
+  //   return temp
+  // }
+
+  
+
   return (
     <div className="App">
       <h1 className="">Attendee</h1>
+      <h3>No of students in class: {totalStudents}</h3>
+      <StudentForm addStudent={addStudent} />
 
       <StudentList
         studentList={studentList}
         handleCheckIn={handleCheckIn}
         handleCheckOut={handleCheckOut}
       />
-      <StudentForm addStudent={addStudent} />
     </div>
   );
 }
