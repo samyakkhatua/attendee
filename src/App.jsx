@@ -40,11 +40,10 @@ function App() {
   };
 
   const addStudent = (studentInfo) => {
-    console.log(studentInfo.name + " " + studentInfo.roll);
-    // let copy = [...studentList]
+    let copy = [...studentList]
 
-    // copy = [...copy, {id: studentList.length + 1, task: studentName, status:false}]
-    // setStudentList(copy);
+    copy = [...copy, {id: studentList.length + 1, name: studentInfo.name, roll:studentInfo.roll, status:true, checkin:currTime}]
+    setStudentList(copy);
   };
 
   return (
