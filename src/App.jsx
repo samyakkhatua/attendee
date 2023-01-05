@@ -8,6 +8,7 @@ function App() {
   const [studentList, setStudentList] = useState(data);
 
   const handleCheckIn = (id) => {
+    // console.log(id)
     let mapped = studentList.map(student => {
       return student.id == id ? { ...student, status: !student.status } : { ...student};
     });
@@ -16,7 +17,7 @@ function App() {
   }
 
   const addStudent = (studentInfo) => {
-    console.log(studentInfo.name);
+    console.log(studentInfo.name + " " + studentInfo.roll);
     // let copy = [...studentList]
 
     // copy = [...copy, {id: studentList.length + 1, task: studentName, status:false}]
