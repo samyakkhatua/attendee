@@ -1,13 +1,13 @@
 import React from "react";
 import Student from "./Student";
 
-const StudentList = ({ studentList, handleCheckIn }) => {
+const StudentList = ({ studentList, handleCheckIn, handleCheckOut }) => {
   return (
     <div className="relative overflow-x-auto shadow-md sm:rounded-lg mx-20">
       <table class="w-[100%] text-sm text-left text-gray-500 dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr className="w-full">
-            <th scope="col" class="p-4">
+            {/* <th scope="col" class="p-4">
               <div class="flex items-center">
                 <input
                   id="checkbox-all-search"
@@ -18,7 +18,7 @@ const StudentList = ({ studentList, handleCheckIn }) => {
                   checkbox
                 </label>
               </div>
-            </th>
+            </th> */}
             <th scope="col" class="px-6 py-3">
               Roll No.
             </th>
@@ -44,7 +44,7 @@ const StudentList = ({ studentList, handleCheckIn }) => {
       {studentList.map((student) => {
         return (
           <>
-            <Student student={student} handleCheckIn={handleCheckIn} />
+            <Student student={student} handleCheckIn={handleCheckIn} handleCheckOut={handleCheckOut} />
           </>
         );
       })}
