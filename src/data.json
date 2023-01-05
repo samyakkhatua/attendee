@@ -2,51 +2,71 @@
     "id": 1,
     "name": "Give dog a bath",
     "roll": 37,
-    "status": false
+    "status": false,
+    "checkin": "time",
+    "checkout": "time"
   }, {
     "id": 2,
     "name": "Do laundry",
     "roll": 37,
-    "status": true
+    "status": true,
+    "checkin": "time",
+    "checkout": "time"
   }, {
     "id": 3,
     "name": "Vacuum floor",
     "roll": 37,
-    "status": false
+    "status": false,
+    "checkin": "time",
+    "checkout": "time"
   }, {
     "id": 4,
     "name": "Feed cat",
     "roll": 37,
-    "status": true
+    "status": true,
+    "checkin": "time",
+    "checkout": "time"
   }, {
     "id": 5,
     "name": "Change light bulbs",
     "roll": 37,
-    "status": false
+    "status": false,
+    "checkin": "time",
+    "checkout": "time"
   }, {
     "id": 6,
     "name": "Go to Store",
     "roll": 37,
-    "status": true
+    "status": true,
+    "checkin": "time",
+    "checkout": "time"
   }, {
     "id": 7,
     "name": "Fill gas tank",
     "roll": 37,
-    "status": true
+    "status": true,
+    "checkin": "time",
+    "checkout": "time"
   }, {
     "id": 8,
     "name": "Change linens",
     "roll": 37,
-    "status": false
+    "status": false,
+    "checkin": "time",
+    "checkout": "time"
   }, {
     "id": 9,
     "name": "Rake leaves",
     "roll": 37,
-    "status": true
+    "status": true,
+    "checkin": "time",
+    "checkout": "time"
   }, {
     "id": 10,
     "name": "Bake Cookies",
     "roll": 37,
-    "status": false
+    "status": false,
+    "checkin": "time",
+    "checkout": "time"
   }]
  
