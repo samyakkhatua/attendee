@@ -8,7 +8,6 @@ function App() {
   const [studentList, setStudentList] = useState(data);
 
   const handleCheckIn = (id) => {
-    // console.log(id)
     let mapped = studentList.map(student => {
       return student.id == id ? { ...student, status: !student.status } : { ...student};
     });
