@@ -35,9 +35,18 @@ function App() {
   };
 
   const addStudent = (studentInfo) => {
-    let copy = [...studentList]
+    let copy = [...studentList];
 
-    copy = [...copy, {id: studentList.length + 1, name: studentInfo.name, roll:studentInfo.roll, status:true, checkin:currTime}]
+    copy = [
+      ...copy,
+      {
+        id: studentList.length + 1,
+        name: studentInfo.name,
+        roll: studentInfo.roll,
+        status: true,
+        checkin: currTime,
+      },
+    ];
     setStudentList(copy);
   };
 
@@ -54,12 +63,22 @@ function App() {
   //   return temp
   // }
 
-  
-
   return (
-    <div className="App">
-      <h1 className="">Attendee</h1>
-      <h3>No of students in class: {totalStudents}</h3>
+    <div className="w-[100%] bg-gray-900">
+
+    <div className="lg:w-[80%] w-full px-40 py-40 bg-gray-900 dark:bg-gray-900">
+      <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white">
+      Effortlessly Mark Attendance and{" "}
+        <span class="text-blue-600 dark:text-blue-500">Streamline Your Classroom Management</span>{" "}
+        with  Attendee.
+      </h1>
+      <p class=" w-[80%] mb-10 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+        Gone are the days of manually taking attendance on paper or relying on
+        students to remember to sign in. With our app, you can easily mark
+        attendance for each of your classes with just a few taps on your
+        smartphone or tablet.
+      </p>
+
       <StudentForm addStudent={addStudent} />
 
       <StudentList
@@ -67,6 +86,7 @@ function App() {
         handleCheckIn={handleCheckIn}
         handleCheckOut={handleCheckOut}
       />
+    </div>
     </div>
   );
 }
