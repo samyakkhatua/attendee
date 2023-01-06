@@ -12,30 +12,26 @@ const Student = ({ student, handleCheckIn, handleCheckOut }) => {
     handleCheckOut(e.currentTarget.id);
   };
 
-  var today = new Date();
-  let currTime =
-    today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-
   return (
-    <tr class="w-full bg-white text-white border-b bg-gray-800 border-gray-700 hover:bg-gray-50 hover:bg-gray-600">
+    <tr class="w-full text-white border-b bg-gray-800 border-gray-700 hover:bg-gray-600">
       <td class="px-6 py-4 text-base font-semibold ">{student.roll}</td>
 
       {/* name */}
-      <td className="px-6 py-4">{student.name}</td>
+      <td className="px-6 py-4 text-base font-semibold">{student.name}</td>
 
-      <td class="px-6 py-4">
+      <td class="px-6 py-4 font-semibold">
         <div class="flex items-center">
-          <div class="h-2.5 w-2.5 rounded-full bg-green-400 mr-2"></div>{" "}
+          <div class={student.status ? "h-2.5 w-2.5 rounded-full bg-green-400 mr-2" : "h-2.5 w-2.5 rounded-full bg-red-400 mr-2"}></div>{" "}
           {student.status ? "present" : "absent"}
         </div>
       </td>
 
-      <td class="px-6 py-4">{student.checkin}</td>
+      <td class="px-6 py-4 text-base font-semibold">{student.checkin}</td>
 
-      <td class="px-6 py-4">{student.checkout}</td>
+      <td class="px-6 py-4 text-base font-semibold">{student.checkout}</td>
 
       {/* action buttons */}
-      <td class="px-6 py-4 flex gap-2">
+      <td class="px-6 py-4 flex gap-2 ">
         {student.status == false && (
           <button
             id={student.id}

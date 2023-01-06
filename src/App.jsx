@@ -66,7 +66,7 @@ function App() {
   return (
     <div className="w-[100%] bg-gray-900">
 
-    <div className="lg:w-[80%] w-full px-40 py-40 bg-gray-900 dark:bg-gray-900">
+    <div className="lg:w-[80%] w-[100%] px-40 py-40 bg-gray-900 dark:bg-gray-900">
       <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white">
       Effortlessly Mark Attendance and{" "}
         <span class="text-blue-600 dark:text-blue-500">Streamline Your Classroom Management</span>{" "}
