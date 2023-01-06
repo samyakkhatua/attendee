@@ -1,15 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Rakesh Kumar",
-        "roll": 1,
-        "status": false,
-        "checkin": "-",
-        "checkout": "-"
-    },
-    {
-        "id": 2,
-        "name": "rohan Kumar",
+        "name": "Samyak Khatua",
         "roll": 1,
         "status": false,
         "checkin": "-",
