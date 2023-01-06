@@ -6,6 +6,14 @@
         "status": false,
         "checkin": "-",
         "checkout": "-"
+    },
+    {
+        "id": 2,
+        "name": "rohan Kumar",
+        "roll": 1,
+        "status": false,
+        "checkin": "-",
+        "checkout": "-"
     }
 ]
 
