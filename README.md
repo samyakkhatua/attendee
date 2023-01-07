@@ -6,8 +6,6 @@ Gone are the days of manually taking attendance on paper or relying on students 
 ### Deployed Link : https://attendeepro.netlify.app
 ### Guthub Repo : https://github.com/samyakkhatua/attendee 
 
-## Prerequisites
-[List any dependencies or prerequisites for your project]
 
 ## Demo
 
