@@ -4,7 +4,7 @@
 Gone are the days of manually taking attendance on paper or relying on students to remember to sign in. With our app, you can easily mark attendance for each of your classes with just a few taps on your smartphone or tablet.
 
 ### Deployed Link : https://attendeepro.netlify.app
-### Guthub Repo : https://github.com/samyakkhatua/attendee 
+### Github Repo : https://github.com/samyakkhatua/attendee 
 
 
 ## Demo
