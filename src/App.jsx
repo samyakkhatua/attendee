@@ -7,6 +7,7 @@ import StudentForm from "./components/StudentForm";
 function App() {
   const [studentList, setStudentList] = useState(data);
   const [classStrength, setClassStrength] = useState(0);
+  const [totalPresent, setTotalPresent] = useState(0);
 
   const countStrength = () => {
     let copy = [...studentList];
@@ -63,7 +64,6 @@ function App() {
       },
     ];
     setStudentList(copy);
-    // countStrength();
   };
 
   return (
@@ -88,6 +88,7 @@ function App() {
           Total number of students present:
           <span class="bg-blue-100 text-blue-800 text-2xl font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">
             {classStrength}
+            {totalPresent}
           </span>
         <button
           type="button"
