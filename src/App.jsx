@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import data from "./data.json";
 import StudentList from "./components/StudentList";
 import "./App.css";
@@ -8,6 +8,10 @@ function App() {
   const [studentList, setStudentList] = useState(data);
   const [classStrength, setClassStrength] = useState(0);
   const [totalPresent, setTotalPresent] = useState(0);
+
+  useEffect(() => {
+    console.log("I run everytime!");
+  })
 
   const countStrength = () => {
     let copy = [...studentList];
