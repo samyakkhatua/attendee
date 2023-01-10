@@ -6,14 +6,11 @@ import StudentForm from "./components/StudentForm";
 
 function App() {
   const [studentList, setStudentList] = useState(data);
-  const [classStrength, setClassStrength] = useState(0);
+  // const [classStrength, setClassStrength] = useState(0);
   const [totalPresent, setTotalPresent] = useState(0);
 
   useEffect(() => {
     console.log("I run everytime!");
-  })
-
-  const countStrength = () => {
     let copy = [...studentList];
 
     let count = 0;
@@ -22,8 +19,9 @@ function App() {
         ++count;
       }
     }
-    setClassStrength(count);
-  };
+    setTotalPresent(count);
+  })
+
 
   var today = new Date();
   let currTime =
@@ -91,12 +89,11 @@ function App() {
         <p class=" w-[80%] mb-10 text-2xl font-normal text-white lg:text-xl ">
           Total number of students present:
           <span class="bg-blue-100 text-blue-800 text-2xl font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">
-            {classStrength}
             {totalPresent}
           </span>
-        <button
+        {/* <button
           type="button"
-          onClick={countStrength}
+          // onClick={countStrength}
           class=""
         >
           <svg
@@ -113,7 +110,7 @@ function App() {
               d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
             />
           </svg>
-        </button>
+        </button> */}
         </p>
 
         <StudentForm addStudent={addStudent} />
